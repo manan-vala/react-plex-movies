@@ -1,0 +1,97 @@
+.nav {
+  width: 100%;
+  height: 4rem;
+  background-color: #111;
+  color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.logo-search {
+  display: flex;
+  padding: 1rem 0 1rem 0;
+}
+
+.logo-search .logo {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.logo-search .logo img {
+  height: 2rem;
+}
+
+.search {
+  display: flex;
+  background-color: #282828;
+  align-items: center;
+  border-radius: 999px;
+}
+
+.search input {
+  height: 100%;
+  background-color: transparent;
+  border: 0;
+  width: 16rem;
+  border-radius: 999px;
+}
+
+.NavImg {
+  height: 1rem;
+  filter: brightness(0) invert(1);
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+/* .mainmenu {
+} */
+
+.mainmenu ul {
+  list-style: none;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.mainmenu li {
+  padding: 0.5rem 1rem 0.5rem 0;
+  box-sizing: border-box;
+  border: 1px solid white;
+  border-radius: 999px;
+  font-weight: 700;
+}
+
+.action{
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 7rem;
+}
+
+.circle {
+  height: 3rem;
+  width: 3rem;
+  margin: 0 auto;
+  border-radius: 50%;
+  /* background-color: white; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle svg {
+  height: 50%;
+  width: 50%;
+}
+
+.ActionBtn {
+  height: 2.25rem;
+  width: 6rem;
+  background-color: #303030;
+  color: white;
+  border: none;
+  border-radius: 999px;
+  font-weight: 700;
+
+}
