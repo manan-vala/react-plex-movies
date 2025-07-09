@@ -13,7 +13,6 @@ export default function Section() {
     (async () => {
       try {
         const res = await axios.get(url);
-        console.log(res.data.data);
         setMovies(res.data.data);
       } catch {}
     })();

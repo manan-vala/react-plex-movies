@@ -33,7 +33,7 @@
 
 .poster {
   width: 15rem;
-  border-radius: 5%;
+  border-radius: 15px;
 }
 
 .md-content-txt {
@@ -78,6 +78,7 @@
 .movie-overview {
   padding-top: 2rem;
   width: 85%;
+  font-size: 1.2rem;
 }
 
 .movie-cast {
@@ -90,20 +91,19 @@
   overflow-x: auto;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
-  scrollbar-width: thin;
+  scrollbar-width: none;
 }
 
 .movie-cast::-webkit-scrollbar {
-  height: 8px;
+  /* height: 8px; */
   display: none;
 }
 
-.movie-cast::-webkit-scrollbar-thumb {
+/* .movie-cast::-webkit-scrollbar-thumb {
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 4px;
   display: none;
-
-}
+} */
 
 .box {
   flex: 0 0 auto;
@@ -118,11 +118,11 @@
 .box img {
   height: 6rem;
   width: 6rem;
-  background-color: white;
   border-radius: 50%;
+  object-fit: cover;
 }
 
-.box .cast-img {
+/* .box .cast-img {
   height: 6rem;
   width: 6rem;
   border-radius: 50%;
@@ -130,7 +130,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-}
+} */
 
 .name {
   margin-top: 0.5rem;
