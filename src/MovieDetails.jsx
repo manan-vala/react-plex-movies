@@ -9,7 +9,7 @@ function MovieDetails() {
   const location = useLocation();
   const movie = location.state;
 
-  //filtering on image loading error
+  //filtering on cast-image loading error
   const [validCast, setValidCast] = useState(movie.casts);
 
   const handleImgError = (id) => {

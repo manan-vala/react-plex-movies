@@ -34,6 +34,7 @@
 .poster {
   width: 15rem;
   border-radius: 15px;
+  box-shadow: 4px 4px 8px rgba(255, 255, 255, 0.2);
 }
 
 .md-content-txt {
