@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import "./Section.css";
+import MovieCard from "./Props/MovieCard";
 import { useNavigate } from "react-router-dom";
 
 const url = "https://jsonfakery.com/movies/paginated";
@@ -24,6 +25,9 @@ export default function Section() {
         <h1>Movies</h1>
         <div className="movie-content">
           {movies.map((movie) => (
+            <MovieCard key={movie.id} movie={movie} />
+          ))}
+          {/* {movies.map((movie) => (
             <div
               className="movie-1"
               key={movie.id}
@@ -35,7 +39,7 @@ export default function Section() {
               <img src={movie.poster_path} alt={movie.original_title} />
               <p>{movie.original_title}</p>
             </div>
-          ))}
+          ))} */}
         </div>
       </div>
     </div>
