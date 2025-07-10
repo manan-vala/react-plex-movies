@@ -1,0 +1,81 @@
+.board {
+  height: 100vh;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background-color: #222;
+  z-index: 500;
+  width: 20%;
+  color: white;
+  padding-top: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  box-sizing: border-box;
+  box-shadow: 0 8px 16px #000;
+  transition: left 0.3s ease-in-out;;
+}
+
+.board .NavImg {
+  height: 1.75rem;
+  filter: brightness(0) invert(1);
+  padding-right: 0.75rem;
+}
+
+.board h1 {
+  padding-left: 1rem;
+  text-decoration: underline solid white;
+  text-underline-offset: 10px;
+}
+
+.board-mainmenu {
+  margin-top: 2rem;
+}
+
+.board-mainmenu ul {
+  list-style: none;
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+}
+
+.board-mainmenu li {
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  box-sizing: border-box;
+  font-weight: 700;
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.board-mainmenu li:hover {
+  border-radius: 999px;
+  box-shadow: 0 0 8px white;
+}
+
+@media (min-width:1240px) {
+  .board {
+    display: none;
+  }
+}
+@media (max-width:1180px) {
+  .board {
+    width: 25%;
+  }
+}
+
+@media (max-width:1000px) {
+  .board {
+    width: 30%;
+  }
+
+  .board-mainmenu li {
+    transform: scale(0.85);
+  }
+}
+
+@media (max-width:800px) {
+  .board {
+    width: 15rem;
+  }
+}
