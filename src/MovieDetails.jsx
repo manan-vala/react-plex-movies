@@ -41,6 +41,7 @@ function MovieDetails() {
           <p className="movie-overview">{movie.overview}</p>
         </div>
       </div>
+      <h1 className="cast-heading">Cast</h1>
       <div className="movie-cast">
         {validCast.map((cast) => (
           <div className="box" key={cast.id}>

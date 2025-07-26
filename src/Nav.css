@@ -36,6 +36,8 @@
   width: 16rem;
   border-radius: 999px;
   margin-right: 1rem;
+  padding-left: 1rem;
+  color: white;
 }
 
 .NavImg {

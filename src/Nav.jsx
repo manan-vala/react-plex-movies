@@ -10,7 +10,7 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 import HoverBoard from "./HoverBoard";
 import { useEffect, useState } from "react";
 
-function Nav() {
+function Nav({ searchQuery, setSearchQuery }) {
   const [isClicked, setIsClicked] = useState(false);
   const [left, setLeft] = useState(-1000);
 
@@ -22,6 +22,10 @@ function Nav() {
     setLeft(isClicked ? 0 : -1000);
   }, [isClicked]);
 
+  const handleChange = (e) => {
+    setSearchQuery(e.target.value);
+  };
+
   return (
     <>
       <div className="nav">
@@ -30,7 +34,11 @@ function Nav() {
             <img src={logo} alt="" />
           </div>
           <div className="search">
-            <input type="text" />
+            <input
+              type="text"
+              value={searchQuery}
+              onChange={handleChange}
+            />
             <img src={search} alt="" className="NavImg" />
           </div>
         </div>
